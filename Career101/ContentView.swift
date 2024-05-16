@@ -10,10 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack{
-            VStack{
+            NavigationLink(destination: DetailView(), label: {VStack{
                 Text("First Page")
             }
+            })
+            
             .navigationTitle("Career101")
+            
         }
     }
 }
